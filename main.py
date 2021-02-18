@@ -1,3 +1,6 @@
 from Detector import *
 
-detector = Detector
+detector = Detector(use_cuda=True)
+
+detector.processImage("input_data/download.png")
+#detector.processVideo(0)
